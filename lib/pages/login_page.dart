@@ -6,10 +6,10 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF8fcde4), // Purple background
+      backgroundColor: const Color(0xFF8fcde4),
       appBar: AppBar(
         title: const Text('Login to Pet House'),
-        backgroundColor: const Color(0xFF8fcde4), // AppBar color
+        backgroundColor: const Color(0xFF8fcde4),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -17,11 +17,9 @@ class LoginPage extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              // Image displayed above inputs
               SizedBox(
                 height: 150,
-                width:
-                    150, // Ensure the width and height are the same for a circle
+                width: 150,
                 child: ClipOval(
                   child: Image.network(
                     'https://i.ibb.co/m916zHn/15158c3e-30f0-42bd-bd48-9c9450032967.jpg', // Replace with your image URL or asset
@@ -29,7 +27,7 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 20.0), // Spacing after the image
+              const SizedBox(height: 20.0), 
               // Username TextField
               TextField(
                 decoration: InputDecoration(
@@ -45,7 +43,7 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 16.0), // Spacing between fields
+              const SizedBox(height: 16.0), 
               // Password TextField
               TextField(
                 obscureText: true,
@@ -62,7 +60,7 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 24.0), // Spacing before button
+              const SizedBox(height: 24.0), 
               // Login Button
               ElevatedButton(
                 onPressed: () {
@@ -71,13 +69,13 @@ class LoginPage extends StatelessWidget {
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color.fromARGB(
-                      255, 115, 191, 219), // Button background color
+                      255, 115, 191, 219), 
                   padding: const EdgeInsets.symmetric(
                     vertical: 16.0,
                     horizontal: 64.0,
                   ),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8.0), // Rounded corners
+                    borderRadius: BorderRadius.circular(8.0), 
                   ),
                 ),
                 child: const Text(
@@ -86,7 +84,7 @@ class LoginPage extends StatelessWidget {
                     fontSize: 16.0,
                     color: Colors.white, // Text color
                     fontWeight:
-                        FontWeight.bold, // Optional for better visibility
+                        FontWeight.bold, 
                   ),
                 ),
               ),

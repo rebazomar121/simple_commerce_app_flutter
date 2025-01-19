@@ -41,7 +41,6 @@ class CheckoutPage extends StatelessWidget {
       },
     ];
 
-    // Calculate total price
     double total = 0;
     for (var product in products) {
       total += double.parse(product['price']);
@@ -56,7 +55,7 @@ class CheckoutPage extends StatelessWidget {
           // Scrollable List of Products
           Padding(
             padding: const EdgeInsets.only(
-                bottom: 100), // Space for Buy button and total
+                bottom: 100), 
             child: ListView.builder(
               itemCount: products.length,
               itemBuilder: (context, index) {
@@ -76,7 +75,7 @@ class CheckoutPage extends StatelessWidget {
                             product['imageUrl'],
                             width: 80,
                             height: 80,
-                            fit: BoxFit.cover, // Make image fit the container
+                            fit: BoxFit.cover, 
                           ),
                         ),
                         const SizedBox(width: 10),
@@ -194,7 +193,7 @@ class CheckoutPage extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: const Footer(
-        selectedIndex: 2, // Checkout tab selected
+        selectedIndex: 2, 
       ),
     );
   }

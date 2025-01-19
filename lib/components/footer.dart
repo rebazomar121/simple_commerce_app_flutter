@@ -25,14 +25,13 @@ class Footer extends StatelessWidget {
           label: 'Checkout',
         ),
       ],
-      currentIndex: selectedIndex, // Highlight the selected tab
+      currentIndex: selectedIndex,
       onTap: (index) {
-        // Notify the parent of the tap and trigger navigation
         onItemTapped(index, context);
       },
-      selectedItemColor: const Color(0xFF8fcde4), // Selected item color
-      unselectedItemColor: Colors.grey, // Unselected item color
-      showUnselectedLabels: true, // Show labels for unselected items
+      selectedItemColor: const Color(0xFF8fcde4),
+      unselectedItemColor: Colors.grey,
+      showUnselectedLabels: true,
     );
   }
 

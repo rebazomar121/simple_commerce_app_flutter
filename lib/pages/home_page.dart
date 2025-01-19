@@ -99,8 +99,7 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.grey,
                 ),
                 filled: true,
-                fillColor:
-                    Colors.grey.shade200, // Light background for a modern look
+                fillColor: Colors.grey.shade200,
                 border: OutlineInputBorder(
                   borderRadius:
                       BorderRadius.circular(12.0), // Slightly rounded corners
@@ -110,8 +109,7 @@ class _HomePageState extends State<HomePage> {
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12.0),
                   borderSide: const BorderSide(
-                    color: Color.fromARGB(
-                        255, 115, 191, 219), // Highlight on focus
+                    color: Color.fromARGB(255, 115, 191, 219),
                     width: 1.5,
                   ),
                 ),

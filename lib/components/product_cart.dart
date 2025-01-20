@@ -116,7 +116,7 @@ class ProductCard extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      backgroundColor: Colors.blue,
+                      backgroundColor: const Color.fromARGB(255, 115, 191, 219),
                       foregroundColor: Colors.white,
                     ),
                     child: const Text(

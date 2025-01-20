@@ -69,7 +69,7 @@ class ProfilePage extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(height: 24.0), 
+                const SizedBox(height: 24.0), // Spacing before button
                 // Basket Items
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -139,7 +139,7 @@ class ProfilePage extends StatelessWidget {
       ),
       // Footer
       bottomNavigationBar: const Footer(
-        selectedIndex: 1, 
+        selectedIndex: 1, // Profile tab selected
       ),
     );
   }
